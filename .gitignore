@@ -7,18 +7,34 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ambiente
+.env
+.env.*          # qualquer variação de arquivo .env
+
+# Diretórios de dependência
+node_modules/
+
+# Build
+dist/
+dist-ssr/
+.vite/           # cache do Vite
+
+# Arquivos locais
 *.local
 
-# Editor directories and files
+# Pastas de editor/IDE
 .vscode/*
 !.vscode/extensions.json
-.idea
-.DS_Store
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Outros
+coverage/        # caso use testes no futuro
